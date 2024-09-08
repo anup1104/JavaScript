@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;    
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+
+        }
+       #main{
+        width: 100%;
+        height: 100%;
+        background-color: #d8d5d5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       #box{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        width: 300px;
+        height: 30px;
+        border-radius: 20px;
+        transform: translate(-50%,-50%);
+        background-color: pink;
+       }
+       input{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: 2px solid blue;
+        font-weight: 900;
+        color: black;
+        padding: 3px;
+       }
+       #container{
+        width: 700px;
+        height: 400px;
+        position: absolute;
+        top: 30%;
+        left: 26%;
+        /* transform: translate(-50%,-50%); */
+        background-color: rgb(195, 206, 206);
+        display: flex;
+        padding: 20px 10px;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        border-radius: 30px;
+        
+
+       }
+       .per{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        /* position: relative; */
+        overflow: hidden;
+        object-position: center;
+        
+       }
+       .per img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the div completely */
+}
+#person1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+       
+
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <div id="box">
+            <input type="text" placeholder="Search..">
+        </div>
+        <div id="container">
+            <div  id="person1">
+               <div class="per"><img src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG90cmFpdCUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
+               </div>
+               <p>shyam</p> 
+            </div>
+            <div  id="person1">
+                <div class="per"><img src="https://images.unsplash.com/photo-1710438597462-32b8fabf8dba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBvdHJhaXQlMjBtYW4lMjBpbmRpYXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+                </div>
+                <p>Harsh</p> 
+                    </div>
+            <div  id="person1">
+                <div class="per"><img src="https://images.unsplash.com/photo-1513956589380-bad6acb9b9d4?q=80&w=1536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div> 
+                <p>Bob</p>    
+            </div>
+            <div  id="person1">
+                <div class="per"><img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>  
+                <p>William</p>   
+            </div>
+            
+        </div>
+
+    </div>
+  
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
